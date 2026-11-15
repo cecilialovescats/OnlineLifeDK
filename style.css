@@ -1,4 +1,5 @@
 
+/* GENERAL */
 * {
   box-sizing: border-box;
 }
@@ -9,30 +10,28 @@ html {
 
 body {
   margin: 0;
-  background-color: #f9eces;
-  color: #00F62;
-  font-family: ibm-plex-mono;
+  background-color: #f9ece5;
+  color: #00F622;
+  font-family: "IBM Plex Mono", monospace;
   line-height: 1.6;
 }
 
-
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-
   padding: 20px 6%;
-
   background-color: #2B10B3;
 }
 
 header > a {
   color: #29342a;
-  font-family: ibm-plex-mono;
   font-size: 24px;
   text-decoration: none;
 }
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -41,7 +40,6 @@ nav {
 
 nav a {
   color: #29342a;
-  font-family: ibm-plex-mono;
   font-size: 14px;
   text-decoration: none;
 }
@@ -50,13 +48,12 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* MAIN SECTIONS */
 main > section {
   padding: 50px 6%;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   line-height: 1.2;
   font-weight: normal;
 }
@@ -78,17 +75,15 @@ p {
   max-width: 700px;
 }
 
+/* HERO */
 .hero {
   width: 100%;
-  height: 400px;
-
+  min-height: 400px;
   padding: 0 6%;
-
   background-image: url("coast2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -113,130 +108,100 @@ p {
   font-size: 30px;
 }
 
+/* SEARCH PANEL */
 .search-panel {
   position: relative;
-
   width: 100%;
-  height: 200px;
-
+  min-height: 200px;
   background: #d66095;
   color: #555;
-
-  font-family: ibm-plex-mono;
+  font-family: "IBM Plex Mono", monospace;
 }
-
 
 .location-box {
   position: absolute;
-
   left: 2.5%;
   top: 10px;
-
   width: 18%;
 }
 
 .location-box label,
 .date-box label {
   display: block;
-
   margin-left: 4px;
   margin-bottom: 3px;
-
   font-size: 10px;
   line-height: 1;
-
   color: #555;
 }
 
 .location-box input,
 .date-box input {
   display: block;
-
   width: 100%;
   height: 27px;
-
   padding: 0 12px;
-
   border: 0;
   outline: 0;
   border-radius: 14px;
-
   background: rgba(255, 255, 255, 0.6);
-
-  font-family: ibm-plex-mono;
+  font-family: inherit;
   font-size: 15px;
   color: #555;
 }
 
 .date-box {
   position: absolute;
-
   left: 40%;
   top: 10px;
-
   width: 21%;
 }
 
 .travel-box {
   position: absolute;
-
   left: 9%;
   top: 62px;
-
   width: 41%;
 }
 
 .travel-title {
   margin-bottom: 5px;
-
   text-align: center;
-
   font-size: 20px;
   line-height: 1;
-
   color: #555;
 }
 
 .travel-box input[type="range"] {
   display: block;
-
   width: 100%;
   height: 2px;
-
   margin: 0;
-
   appearance: none;
   -webkit-appearance: none;
-
   border: 0;
   outline: 0;
-
   background: #f4f7e9;
 }
 
 .travel-box input[type="range"]::-webkit-slider-thumb {
   width: 10px;
   height: 10px;
-
   appearance: none;
   -webkit-appearance: none;
-
   border: 0;
   border-radius: 50%;
-
   background: #f5f5eb;
-
   cursor: pointer;
 }
 
 .travel-box input[type="range"]::-moz-range-thumb {
   width: 10px;
   height: 10px;
-
   border: 0;
   border-radius: 50%;
-
   background: #f5f5eb;
+  cursor: pointer;
 }
 
 .time-labels {
@@ -248,22 +213,19 @@ p {
   color: #f3f7df;
 }
 
+/* PERSON */
 .person-box {
   position: absolute;
-
   left: 61.5%;
   top: 58px;
-
   width: 75px;
 }
 
 .person-label {
   margin-left: 12px;
   margin-bottom: 0;
-
   font-size: 10px;
   line-height: 1;
-
   color: #666;
 }
 
@@ -275,28 +237,20 @@ p {
 .person-icon {
   position: relative;
   z-index: 2;
-
   display: block;
-
   width: 28px;
   height: 38px;
-
   object-fit: contain;
 }
-
 
 .star {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 36px;
   height: 36px;
-
   margin-left: -3px;
-
   background: rgba(255, 255, 255, 0.55);
-
   clip-path: polygon(
     50% 0%,
     61% 35%,
@@ -313,18 +267,13 @@ p {
 
 .star input {
   width: 20px;
-
   padding: 0;
-
   border: 0;
   outline: 0;
-
   background: transparent;
-
   font-family: Arial, sans-serif;
   font-size: 20px;
   text-align: center;
-
   color: #555;
 }
 
@@ -337,70 +286,46 @@ p {
 .star input[type="number"] {
   -moz-appearance: textfield;
 }
-/* Search icon */
+
+/* SEARCH ICON */
 .search-button {
   position: absolute;
   left: 76%;
   top: 55px;
-
   width: 70px;
   height: 70px;
-
   border: none;
   border-radius: 50%;
-
   background: rgba(255, 255, 255, 0.65);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 0;
-  cursor: default;
+  cursor: pointer;
 }
 
 .search-icon {
   position: relative;
-
   width: 28px;
   height: 28px;
-
   border: 3px solid #777;
   border-radius: 50%;
 }
 
 .search-icon::after {
   content: "";
-
   position: absolute;
   width: 16px;
   height: 3px;
-
   right: -12px;
   bottom: -7px;
-
   background: #777;
   border-radius: 3px;
-
   transform: rotate(45deg);
   transform-origin: left center;
 }
-.travel-box input[type="range"] {
-  display: block;
-  width: 100%;
-  height: 2px;
-  margin: 0;
 
-  appearance: none;
-  -webkit-appearance: none;
-
-  border: none;
-  outline: none;
-
-  background: #f4f7e9;
-}
-
-
+/* DESTINATIONS */
 #destinationer {
   background-color: #fffde3;
 }
@@ -413,27 +338,21 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-
   gap: 20px;
-
   width: 100%;
 }
 
 .card {
   flex: 1;
   min-width: 0;
-
   padding: 15px;
-
   background-color: #ffffda;
 }
 
 .card img {
   display: block;
-
   width: 100%;
   height: 220px;
-
   object-fit: cover;
 }
 
@@ -441,23 +360,21 @@ p {
   margin-bottom: 0;
   font-size: 22px;
 }
+
+/* EXPERIENCES */
 #oplevelser {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-
   gap: 25px;
 }
 
 #oplevelser > h2 {
   grid-column: 1 / -1;
-
   margin-top: 0;
 }
 
 article {
   padding: 25px;
-
   background-color: #d8e9ed;
 }
 
@@ -465,107 +382,94 @@ article h3 {
   margin-top: 0;
 }
 
+/* ABOUT */
 #om-os {
   background-color: #eef4e7;
 }
+
+/* FOOTER */
 footer {
   padding: 25px 6%;
-
   background-color: #c4ee9e;
-
   font-family: "Courier New", monospace;
   font-size: 14px;
 }
+
+/* ACCESSIBILITY */
 a:focus-visible {
   outline: 5px solid #476a39;
   outline-offset: 5px;
 }
 
-.ibm-plex-mono-thin {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 100;
-  font-style: normal;
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    min-height: 300px;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  #oplevelser {
+    grid-template-columns: 1fr;
+  }
+
+  .search-panel {
+    min-height: 350px;
+  }
+
+  .location-box,
+  .date-box,
+  .travel-box,
+  .person-box,
+  .search-button {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 90%;
+    margin: 12px auto;
+  }
+
+  .search-button {
+    width: 55px;
+    height: 55px;
+  }
+
+  .time-labels {
+    font-size: 14px;
+  }
 }
 
-.ibm-plex-mono-extralight {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 200;
-  font-style: normal;
+@media (max-width: 480px) {
+  main > section {
+    padding: 35px 5%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
 }
-
-.ibm-plex-mono-light {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.ibm-plex-mono-regular {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ibm-plex-mono-medium {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.ibm-plex-mono-semibold {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.ibm-plex-mono-bold {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.ibm-plex-mono-thin-italic {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.ibm-plex-mono-extralight-italic {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.ibm-plex-mono-light-italic {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.ibm-plex-mono-regular-italic {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.ibm-plex-mono-medium-italic {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.ibm-plex-mono-semibold-italic {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.ibm-plex-mono-bold-italic {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 700;
-  font-style: italic;
-}
-
-
-
 
 
