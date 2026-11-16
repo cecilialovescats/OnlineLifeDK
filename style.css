@@ -54,7 +54,14 @@ nav a:hover {
 main > section {
   padding: 50px 6%;
 }
+.logo {
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+}
 
+.hero h1 {
+  font-family: "Press Start 2P", cursive;
+}
 h1,
 h2,
 h3 {
@@ -85,7 +92,6 @@ p {
   width: 100%;
   min-height: 400px;
   padding: 0 6%;
-  background-image: url("comp.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -233,7 +239,6 @@ a:focus-visible {
     height: 200px;
   }
 }
-
 
 .ibm-plex-mono-thin {
   font-family: "IBM Plex Mono", monospace;
