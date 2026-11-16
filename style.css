@@ -102,7 +102,7 @@ p {
 
 .hero-text {
   color: white;
-  font-family: "Press Start 2P"
+  font-family: "Press Start 2P";
   text-align: left;
 }
 
@@ -145,7 +145,7 @@ p {
 
 .card h2 {
   margin-bottom: 0;
-  font-size: 22px;
+  font-size: 40px;
 }
 
 #om-os {
