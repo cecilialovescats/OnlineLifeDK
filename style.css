@@ -121,6 +121,7 @@ p {
 }
 
 .cards {
+  font-family: "Press Start 2P", cursive;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
