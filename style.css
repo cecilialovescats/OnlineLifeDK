@@ -77,7 +77,7 @@ p {
   width: 100%;
   min-height: 400px;
   padding: 0 6%;
-  background-image: url("comp.jpeg");
+  background-image: url("comp.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -88,6 +88,7 @@ p {
 
 .hero-text {
   color: white;
+  font:IBM Plex Mono;
   text-align: left;
 }
 
