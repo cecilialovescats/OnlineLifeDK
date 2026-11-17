@@ -11,7 +11,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
 
-    <title>Stay Online - Info om AI</title>
+    <title>Stay Online - AI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,10 +22,12 @@
 
     <nav>
         <a href="index.html">Forside</a>
-        <a href="how.html">Info Om AI</a>
+        <a href="work.html">Info Om AI</a>
+        <a href="Safety.html">Safety</a>
         <a href="omos.html">Om os</a>
     </nav>
 </header>
+
 
 <main class="archive">
 
@@ -35,35 +37,26 @@
         <p>Vælg et emne og lær mere om kunstig intelligens.</p>
     </div>
 
+
     <div class="archive-layout">
+
+        <!-- SIDEBAR -->
 
         <aside class="topic-menu">
 
             <h2>EMNER</h2>
 
-            <button class="topic-btn active" data-topic="ai">
-                01 / Hvad er AI?
-            </button>
+            <a href="#ai">01 / Hvad er AI?</a>
 
-            <button class="topic-btn" data-topic="work">
-                02 / Hvordan virker AI?
-            </button>
+            <a href="#work">02 / Hvordan virker AI?</a>
 
-            <button class="topic-btn" data-topic="spot">
-                03 / Spot AI
-            </button>
+            <a href="#spot">03 / Spot AI</a>
 
-            <button class="topic-btn" data-topic="everyday">
-                04 / AI i hverdagen
-            </button>
+            <a href="#everyday">04 / AI i hverdagen</a>
 
-            <button class="topic-btn" data-topic="safety">
-                05 / Online sikkerhed
-            </button>
+            <a href="#safety">05 / Online sikkerhed</a>
 
-            <button class="topic-btn" data-topic="responsible">
-                06 / Ansvarlig brug
-            </button>
+            <a href="#responsible">06 / Ansvarlig brug</a>
 
             <div class="sidebar-note">
                 <p>STATUS: ONLINE</p>
@@ -74,22 +67,26 @@
         </aside>
 
 
+        <!-- ARTICLES -->
 
-        <section class="article-display">
+        <div class="article-display">
 
             <div class="article-topbar">
                 <span>DOCUMENT VIEWER</span>
                 <span>● ONLINE</span>
             </div>
 
-            <article class="topic-content active" id="ai">
+
+            <!-- ARTICLE 1 -->
+
+            <article id="ai">
 
                 <span class="category">01 / INTRODUKTION</span>
 
                 <h2>Hvad er AI?</h2>
 
                 <img src="969471af1884785772b59c81538b5588.gif"
-                     alt="Computer og kunstig intelligens">
+                     alt="Computer">
 
                 <p>
                     AI står for artificial intelligence,
@@ -114,25 +111,19 @@
                     digitale assistenter.
                 </p>
 
-                <h3>Eksempler på AI</h3>
-
-                <ul>
-                    <li>Chatbots, som kan besvare spørgsmål.</li>
-                    <li>Ansigtsgenkendelse på mobiltelefoner.</li>
-                    <li>Oversættelsesprogrammer.</li>
-                    <li>Musik- og filmanbefalinger.</li>
-                </ul>
-
             </article>
 
-            <article class="topic-content" id="work" hidden>
+
+            <!-- ARTICLE 2 -->
+
+            <article id="work">
 
                 <span class="category">02 / TEKNOLOGI</span>
 
                 <h2>Hvordan virker AI?</h2>
 
                 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900"
-                     alt="Elektroniske computerkomponenter">
+                     alt="Computer technology">
 
                 <p>
                     AI fungerer ved at analysere store mængder
@@ -154,20 +145,21 @@
                 <p>
                     Generativ AI kan skabe nyt indhold,
                     såsom tekst, billeder, musik og video.
-                    Den bruger mønstre fra sine træningsdata
-                    til at generere nye resultater.
                 </p>
 
             </article>
 
-            <article class="topic-content" id="spot" hidden>
+
+            <!-- ARTICLE 3 -->
+
+            <article id="spot">
 
                 <span class="category">03 / DIGITAL KRITISK SANS</span>
 
                 <h2>Hvordan spotter man AI?</h2>
 
                 <img src="3385eded17e30462509e078e9fc5a499-removebg-preview.png"
-                     alt="AI-genereret indhold">
+                     alt="AI generated content">
 
                 <p>
                     AI-genererede billeder, videoer og tekster
@@ -182,29 +174,26 @@
                     <li>Mærkelige fingre eller hænder.</li>
                     <li>Urealistiske skygger og refleksioner.</li>
                     <li>Information, der ikke kan verificeres.</li>
-                    <li>Unaturlige bevægelser i videoer.</li>
                 </ul>
 
-                <h3>Vigtigt at huske</h3>
-
                 <p>
-                    AI bliver hele tiden bedre. Derfor er
-                    disse tegn ikke altid nok til at afgøre,
-                    om noget er ægte eller kunstigt.
-                    Undersøg altid kilden og sammenlign
-                    informationen med andre troværdige kilder.
+                    AI bliver hele tiden bedre, så disse tegn
+                    er ikke altid nok. Undersøg altid kilden.
                 </p>
 
             </article>
 
-            <article class="topic-content" id="everyday" hidden>
+
+            <!-- ARTICLE 4 -->
+
+            <article id="everyday">
 
                 <span class="category">04 / HVERDAGSLIV</span>
 
                 <h2>AI i hverdagen</h2>
 
                 <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900"
-                     alt="Computer på skrivebord">
+                     alt="Computer workspace">
 
                 <p>
                     AI er blevet en del af mange menneskers
@@ -219,27 +208,21 @@
                     <li>Streamingplatforme foreslår film og musik.</li>
                     <li>Mobiltelefoner bruger stemmeassistenter.</li>
                     <li>Navigation hjælper med at finde ruter.</li>
-                    <li>AI-værktøjer hjælper med tekst og idéer.</li>
                 </ul>
-
-                <p>
-                    AI kan gøre mange opgaver lettere,
-                    men det er stadig vigtigt at tænke
-                    kritisk over, hvordan teknologien bruges.
-                </p>
 
             </article>
 
 
+            <!-- ARTICLE 5 -->
 
-            <article class="topic-content" id="safety" hidden>
+            <article id="safety">
 
                 <span class="category">05 / SIKKERHED</span>
 
                 <h2>Online sikkerhed</h2>
 
                 <img src="1ea6bd07911f1101df742d811e674667.jpg"
-                     alt="Digital teknologi">
+                     alt="Digital technology">
 
                 <p>
                     Når vi bruger AI online, er det vigtigt
@@ -252,22 +235,24 @@
 
                 <ul>
                     <li>Del ikke adgangskoder med AI.</li>
-                    <li>Undgå at dele følsomme personlige oplysninger.</li>
+                    <li>Undgå at dele følsomme oplysninger.</li>
                     <li>Kontrollér om hjemmesiden er troværdig.</li>
                     <li>Vær opmærksom på falske billeder og videoer.</li>
-                    <li>Tjek privatlivsindstillingerne.</li>
                 </ul>
 
             </article>
 
-            <article class="topic-content" id="responsible" hidden>
+
+            <!-- ARTICLE 6 -->
+
+            <article id="responsible">
 
                 <span class="category">06 / ANSVARLIGHED</span>
 
                 <h2>Brug AI ansvarligt</h2>
 
                 <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900"
-                     alt="Person der arbejder med computer">
+                     alt="Person working on computer">
 
                 <p>
                     AI kan være et nyttigt værktøj, men
@@ -280,16 +265,9 @@
                 <ul>
                     <li>Kontrollér altid informationen.</li>
                     <li>Brug AI som hjælp, ikke som erstatning for din egen tænkning.</li>
-                    <li>Fortæl, når indhold er AI-genereret, hvis det er relevant.</li>
                     <li>Respektér andres privatliv og ophavsret.</li>
                     <li>Vær kritisk over for svar og anbefalinger.</li>
                 </ul>
-
-                <p>
-                    Det vigtigste er at huske, at AI
-                    ikke altid har ret. Det er stadig
-                    menneskets ansvar at vurdere resultatet.
-                </p>
 
             </article>
 
@@ -297,17 +275,17 @@
                 ONLINE LIV / AI DATABASE / END OF DOCUMENT
             </div>
 
-        </section>
+        </div>
 
     </div>
 
 </main>
 
+
 <footer>
     <p>&copy; Online Life</p>
     <p>INFORMATION DATABASE / 2026</p>
 </footer>
-
 
 </body>
 </html>
