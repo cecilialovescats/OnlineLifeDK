@@ -460,6 +460,97 @@ footer {
         padding: 12px;
     }
 }
+
+/* MAGAZINE LAYOUT */
+
+.content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px 6%;
+}
+
+.section-heading {
+    font-family: "Press Start 2P", cursive;
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #2B10B3;
+}
+
+/* Main magazine grid */
+
+.magazine {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* Article boxes */
+
+.article-box {
+    background-color: #3414D6;
+    color: #f9ece5;
+    padding: 15px;
+    border: 2px solid #2B10B3;
+    min-width: 0;
+}
+
+.article-box img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+.featured img {
+    height: 300px;
+}
+
+.article-box h2,
+.article-box h3 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+}
+
+.article-box p {
+    color: #f9ece5;
+    font-size: 13px;
+}
+
+.category {
+    font-size: 10px;
+    color: #00F622;
+}
+
+
+.side-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.more-articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.more-articles .article-box img {
+    height: 160px;
+}
+
+@media (max-width: 768px) {
+    .magazine {
+        grid-template-columns: 1fr;
+    }
+
+    .more-articles {
+        grid-template-columns: 1fr;
+    }
+}
+
 </style>
 </head>
 
