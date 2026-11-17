@@ -592,7 +592,6 @@ a:focus-visible {
     color: #00F622;
 }
 
-/* ARTICLE WINDOW */
 
 .article-display {
     background: white;
@@ -661,7 +660,6 @@ a:focus-visible {
     color: #2B10B3;
 }
 
-/* MOBILE */
 
 @media (max-width: 768px) {
 
