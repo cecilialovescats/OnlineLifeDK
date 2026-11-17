@@ -1,266 +1,155 @@
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  background-color: #f9ece5;
-  color: #00F622;
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 400;
-  line-height: 1.6;
+    margin: 0;
+    background-color: #f9ece5;
+    color: #00F622;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  padding: 20px 6%;
-  background-color: #2B10B3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 6%;
+    background-color: #2B10B3;
 }
 
 header > a {
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: "Press Start 2P", cursive;
+    font-size: 16px;
 }
 
 nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 nav a {
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  transition: opacity 0.3s ease;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
-  opacity: 0.8;
+    text-decoration: underline;
+    opacity: 0.8;
 }
 
 
 
-main > section {
-  padding: 50px 6%;
-}
-.logo {
-  font-family: "Press Start 2P", cursive;
-  font-size: 16px;
-}
-
-.hero h1 {
-  font-family: "Press Start 2P", cursive;
-}
 h1,
 h2,
 h3 {
-  line-height: 1.2;
-  font-weight: 400;
+    line-height: 1.2;
+    font-weight: 400;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 48px;
+    margin-top: 0;
+    font-size: 48px;
 }
 
 h2 {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 h3 {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 p {
-  max-width: 700px;
+    max-width: 700px;
 }
 
 
+main > section {
+    padding: 50px 6%;
+}
 
 .hero {
-  width: 100%;
-  min-height: 400px;
-  padding: 0 6%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    width: 100%;
+    min-height: 400px;
+    padding: 0 6%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .hero-text {
-  color: white;
-  font-family: "Press Start 2P";
-  text-align: left;
+    color: white;
+    font-family: "Press Start 2P", cursive;
+    text-align: left;
 }
 
 .hero h1 {
-  margin: 0;
-  font-size: 80px;
+    font-family: "Press Start 2P", cursive;
+    margin: 0;
+    font-size: 80px;
 }
 
 .hero h2 {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
 .hero p {
-  margin: 10px 0 0;
-  font-size: 30px;
+    margin: 10px 0 0;
+    font-size: 30px;
 }
 
+
 .cards {
-  font-family: "Press Start 2P", cursive;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 20px;
-  width: 100%;
+    font-family: "Press Start 2P", cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
 }
 
 .card {
-  flex: 1;
-  min-width: 0;
-  padding: 15px;
-  background-color: #3414D6;
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    background-color: #3414D6;
 }
 
-
 .card img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .card h1 {
-  margin-bottom: 0;
-  font-size: 40px;
+    margin-bottom: 0;
+    font-size: 40px;
 }
 
 
-
-footer {
-  padding: 15px 6%;
-  background-color: #D66095;
-  font-size: 14px;
-}
-
-
-
-a:focus-visible {
-  outline: 5px solid #476a39;
-  outline-offset: 5px;
-}
-
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
-
-  nav {
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .hero {
-    min-height: 300px;
-  }
-
-  .hero h1 {
-    font-size: 45px;
-  }
-
-  .hero p {
-    font-size: 20px;
-  }
-
-  .cards {
-    flex-direction: column;
-  }
-
-  .card img {
-    height: 250px;
-  }
-}
-
-@media (max-width: 480px) {
-  header {
-    padding: 20px 5%;
-  }
-
-  nav {
-    gap: 12px;
-  }
-
-  nav a {
-    font-size: 15px;
-  }
-
-  main > section {
-    padding: 35px 5%;
-  }
-
-  .hero {
-    min-height: 300px;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-
-  .hero h2 {
-    font-size: 22px;
-  }
-
-  .hero p {
-    font-size: 18px;
-  }
-
-  h2 {
-    font-size: 25px;
-  }
-
-  .card img {
-    height: 200px;
-  }
-}
-
-.ibm-plex-mono-thin {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.ibm-plex-mono-extralight {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 200;
-  font-style: normal;
-}
-
-  
-.ibm-plex-mono-regular {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ibm-plex-mono-bold {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 700;
-  font-style: normal;
+#om-os {
+    background-color: #9864B3;
 }
 
 .content {
@@ -335,17 +224,6 @@ a:focus-visible {
     height: 160px;
 }
 
-@media (max-width: 768px) {
-    .magazine {
-        grid-template-columns: 1fr;
-    }
-
-    .more-articles {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* AI INFORMATION ARCHIVE */
 
 .archive {
     max-width: 1200px;
@@ -368,8 +246,6 @@ a:focus-visible {
     font-size: 12px;
 }
 
-/* Two-column layout */
-
 .archive-layout {
     display: grid;
     grid-template-columns: 240px 1fr;
@@ -377,183 +253,6 @@ a:focus-visible {
     align-items: start;
 }
 
-/* Sidebar */
-
-.topic-menu {
-    background: #3414D6;
-    padding: 18px;
-    color: white;
-    border: 2px solid #2B10B3;
-}
-
-.topic-menu h2 {
-    font-family: "Press Start 2P", cursive;
-    font-size: 13px;
-    margin-bottom: 20px;
-}
-
-.topic-btn {
-    display: block;
-    width: 100%;
-    padding: 12px 8px;
-    margin-bottom: 8px;
-    text-align: left;
-    background: transparent;
-    border: 1px solid #aaa0ff;
-    color: white;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 11px;
-    cursor: pointer;
-}
-
-.topic-btn:hover,
-.topic-btn.active {
-    background: #f9ece5;
-    color: #2B10B3;
-}
-
-.sidebar-note {
-    border-top: 1px solid #aaa0ff;
-    margin-top: 20px;
-    padding-top: 12px;
-    font-size: 9px;
-    color: #00F622;
-}
-
-/* Article window */
-
-.article-display {
-    background: #ffffff;
-    border: 2px solid #2B10B3;
-    min-width: 0;
-}
-
-.article-topbar {
-    display: flex;
-    justify-content: space-between;
-    background: #2B10B3;
-    color: white;
-    padding: 12px;
-    font-size: 10px;
-}
-
-.topic-content {
-    padding: 25px;
-}
-
-.topic-content[hidden] {
-    display: none;
-}
-
-.topic-content .category {
-    color: #2B10B3;
-    font-weight: bold;
-}
-
-.topic-content h2 {
-    font-family: "Press Start 2P", cursive;
-    color: #2B10B3;
-    font-size: 21px;
-    line-height: 1.7;
-    margin: 15px 0;
-}
-
-.topic-content h3 {
-    font-size: 19px;
-    color: #3414D6;
-    margin-top: 25px;
-}
-
-.topic-content p,
-.topic-content li {
-    color: #333;
-    font-size: 13px;
-    line-height: 1.9;
-}
-
-.topic-content li {
-    margin-bottom: 8px;
-}
-
-.topic-content img {
-    display: block;
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    margin: 20px 0;
-    border: 1px solid #3414D6;
-}
-
-.article-footer {
-    background: #f9ece5;
-    border-top: 1px solid #2B10B3;
-    padding: 12px;
-    font-size: 9px;
-    color: #2B10B3;
-}
-
-/* Mobile */
-
-@media (max-width: 768px) {
-    .archive-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .topic-menu {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-    }
-
-    .topic-menu h2,
-    .sidebar-note {
-        grid-column: 1 / -1;
-    }
-
-    .topic-btn {
-        margin: 0;
-    }
-
-    .topic-content {
-        padding: 15px;
-    }
-}
-
-/* =========================
-   AI INFORMATION PAGE
-========================= */
-
-.archive {
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 6%;
-}
-
-.archive-heading {
-    margin-bottom: 30px;
-}
-
-.archive-heading h1 {
-    font-family: "Press Start 2P", cursive;
-    color: #2B10B3;
-    font-size: clamp(22px, 4vw, 35px);
-    line-height: 1.6;
-}
-
-.archive-heading p {
-    font-size: 12px;
-}
-
-/* MAIN LAYOUT */
-
-.archive-layout {
-    display: grid;
-    grid-template-columns: 240px 1fr;
-    gap: 20px;
-    align-items: start;
-}
-
-/* SIDEBAR */
 
 .topic-menu {
     background: #3414D6;
@@ -615,7 +314,8 @@ a:focus-visible {
 }
 
 .article-display article:target {
-    background: #f9ece5;
+    background-color: #f9ece5;
+    border-left: 5px solid #00F622;
 }
 
 .article-display article h2 {
@@ -661,7 +361,57 @@ a:focus-visible {
 }
 
 
+footer {
+    padding: 15px 6%;
+    background-color: #D66095;
+    font-size: 14px;
+}
+
+
+a:focus-visible {
+    outline: 5px solid #476a39;
+    outline-offset: 5px;
+}
+
+
 @media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card img {
+        height: 250px;
+    }
+
+    .magazine {
+        grid-template-columns: 1fr;
+    }
+
+    .more-articles {
+        grid-template-columns: 1fr;
+    }
 
     .archive-layout {
         grid-template-columns: 1fr;
@@ -685,8 +435,70 @@ a:focus-visible {
     .article-display article {
         padding: 15px;
     }
-
 }
 
 
+@media (max-width: 480px) {
+
+    header {
+        padding: 20px 5%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    main > section {
+        padding: 35px 5%;
+    }
+
+    .hero {
+        min-height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+    .archive {
+        padding: 30px 5%;
+    }
+
+    .archive-heading h1 {
+        font-size: 22px;
+    }
+
+    .topic-menu {
+        padding: 12px;
+    }
+
+    .topic-menu a {
+        font-size: 10px;
+        padding: 10px 6px;
+    }
+
+    .article-display article h2 {
+        font-size: 16px;
+    }
+}
 
